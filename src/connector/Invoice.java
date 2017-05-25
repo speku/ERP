@@ -94,18 +94,18 @@ public class Invoice {
 	
 	public String toString(){
 		return 
-				Utility.EmptyOr("Rechnungsnummer:\t\t" + invoiceNumber) + 
-    			Utility.EmptyOr("Kundennummer:\t\t" + customerNumber) + 
-    			Utility.EmptyOr("Kunde:\t\t" + customerName) +
-    			Utility.EmptyOr("Artikelnummer:\t\t" + itemNumber) + 
-    			Utility.EmptyOr("Artikelbeschreibung:\t\t" + itemName) + 
-    			Utility.EmptyOr("Angeforderte Menge:\t\t" + requiredQuantity) + 
-    			Utility.EmptyOr("Gelieferte Menge:\t\t" + deliveredQuantity) + 
-    			Utility.EmptyOr("Rechnungsdatum:\t\t" + invoiceDate) + 
-    			Utility.EmptyOr("Faelligkeitsdatum:\t\t" + requiredDate) + 
-    			Utility.EmptyOr("Stueckpreis Netto:\t\t" + netPrice) + 
-    			Utility.EmptyOr("Stueckpreis Brutto:\t\t" + taxPrice) + 
-    			Utility.EmptyOr("Waehrung:\t\t" + currency);
+				"Rechnungsnummer:\t" + invoiceNumber + "\n" + 
+    			"Kundennummer:\t\t" + customerNumber + "\n" + 
+    			"Kunde:\t\t\t" + customerName +"\n" + 
+    			"Artikelnummer:\t\t" + itemNumber + "\n" + 
+    			"Artikelbeschreibung:\t" + itemName + "\n" + 
+    			"Angeforderte Menge:\t" + requiredQuantity + "\n" + 
+    			"Gelieferte Menge:\t" + deliveredQuantity + "\n" + 
+    			"Rechnungsdatum:\t\t" + invoiceDate + "\n" + 
+    			"Faelligkeitsdatum:\t" + requiredDate + "\n" + 
+    			"Stueckpreis Netto:\t" + netPrice + "\n" + 
+    			"Stueckpreis Brutto:\t" + taxPrice + "\n" + 
+    			"Waehrung:\t\t" + currency + "\n";
 	}
 	
 }

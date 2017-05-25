@@ -11,13 +11,13 @@ import com.sap.conn.jco.JCoTable;
 
 public class Customer {
 	
-	public String number;
 	public ArrayList<Invoice> invoices;
 	
 	private Connector connector;
 	public Organization organization;
 	
 	public String
+	number,
 	firstName,
 	lastName,
 	city,
@@ -32,13 +32,16 @@ public class Customer {
 	
 	public Customer(String number, Connector connector)
 	{
-		this.number = number;
+		this.number = Utility.Pad(number, 10, '0');
 		this.connector = connector;
 		this.organization = connector.organization;
 		GetCustomerDetails();
-		invoices = Invoices(number);
-		
-		// check retrieved data
+		invoices = GetInvoices();
+	}
+	
+	public void Check()
+	{
+		System.out.println(toString());
 		for (Invoice invoice : invoices)
 		{
 			System.out.println(invoice.toString());
@@ -46,10 +49,9 @@ public class Customer {
 		}
 	}
 	
-	private ArrayList<Invoice> Invoices(String customerNumber)
+	private ArrayList<Invoice> GetInvoices()
     {
-    	customerNumber = Utility.Pad(customerNumber,10,'0');
-    	ArrayList<HashMap<String,String>> salesOrders = GetSalesOrders(customerNumber);
+    	ArrayList<HashMap<String,String>> salesOrders = GetSalesOrders(number);
     	ArrayList<Invoice> result = new ArrayList<Invoice>();
     	for (HashMap<String,String> salesOrder : salesOrders)
     	{
@@ -80,6 +82,7 @@ public class Customer {
 	 
 	 public void GetCustomerDetails()
      {	
+		 System.out.println(number);
     	try{
     		JCoFunction f = connector.destination.getRepository().getFunction("BAPI_CUSTOMER_GETDETAIL2");
     		f.getImportParameterList().setValue("CUSTOMERNO", number);
@@ -103,7 +106,9 @@ public class Customer {
     		cityCode = info.getString("CITY_CODE");
     		street = info.getString("STREET");
     		telephoneNumber = info.getString("TELEPHONE");
-    	} catch(Exception e){}
+    	} catch(Exception e){
+    		System.out.println(e.getStackTrace().toString());
+    	}
      }
 	 
 	    private ArrayList<HashMap<String,String>> GetSalesOrders(String customerNumber)

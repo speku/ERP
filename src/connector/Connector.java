@@ -61,8 +61,8 @@ public class Connector
          connectProperties.setProperty(DestinationDataProvider.JCO_ASHOST, "/H/saprouter.hcc.in.tum.de/S/3299/H/131.159.9.153");
          connectProperties.setProperty(DestinationDataProvider.JCO_SYSNR,  "19");
          connectProperties.setProperty(DestinationDataProvider.JCO_CLIENT, "904");
-         connectProperties.setProperty(DestinationDataProvider.JCO_USER,   "mroeck");
-         connectProperties.setProperty(DestinationDataProvider.JCO_PASSWD, "pelzbaum559");
+         connectProperties.setProperty(DestinationDataProvider.JCO_USER,   "username"); // your user
+         connectProperties.setProperty(DestinationDataProvider.JCO_PASSWD, "password"); // your password
          connectProperties.setProperty(DestinationDataProvider.JCO_LANG,   "en");
 
          MyDestinationDataProvider myProvider = new MyDestinationDataProvider();
@@ -83,9 +83,25 @@ public class Connector
     
     public static void main(String[] args) throws Exception
     {
-    	Connector connector = new Connector();
-    	Customer customer = connector.Customer("0000001390");
-    	System.out.println(customer.toString());
+    	// 1. instantiate Connector to setup connection details
+    	Connector connector = new Connector(); 
+    	// 2. instantiate Customer - invoices are retrieved automatically
+        // Customer customer = connector.Customer("0000001390");
+    	// 3. a list of the customer's invoices can be accessed via customer.invoices
+    	// 4. invoice details can be accessed like so:
+    	// Invoice invoice = customer.invoices.get(index)
+    	// String item = invoice.itemName // etc.
+    	connector.Customer("1390").Check(); // works
+    	
+    	// a few more
+//    	connector.Customer("1300").Check();
+//    	connector.Customer("1390").Check();
+    	connector.Customer("1350").Check(); // works
+    	connector.Customer("1000").Check(); // works
+//    	connector.Customer("1300").Check();
+//    	connector.Customer("2300").Check();
+    	
+    	
     	
     }
     
