@@ -1,0 +1,1136 @@
+
+**** Error file opened at 20170524 143725 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 14:37:25,200<    
+RfcException: [null]
+    message: 'sysnr' needs to be a two digit number string instead of '311617007'
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:215)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at connector.Connector.step1Connect(Connector.java:60)
+	at connector.Connector.main(Connector.java:276)
+
+
+**** Error file opened at 20170524 144402 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 14:44:02,670<    
+RfcException: [null]
+    message: 'sysnr' needs to be a two digit number string instead of '311617007'
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:215)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at connector.Connector.step1Connect(Connector.java:60)
+	at connector.Connector.main(Connector.java:276)
+
+
+**** Error file opened at 20170524 144414 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 14:44:14,570<    
+RfcException: [null]
+    message: 'sysnr' needs to be a two digit number string instead of '311617007'
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:215)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at connector.Connector.step1Connect(Connector.java:60)
+	at connector.Connector.main(Connector.java:276)
+
+
+**** Error file opened at 20170524 144517 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 14:45:17,445<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=i19lp1_I19_19 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'i19lp1_I19_19' unknown
+TIME        Wed May 24 14:45:17 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'i19lp1_I19_19' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 145631 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 14:56:31,328<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=I19Z SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'I19Z' unknown
+TIME        Wed May 24 14:56:31 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'I19Z' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 145912 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 14:59:12,663<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=I19 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'I19' unknown
+TIME        Wed May 24 14:59:12 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'I19' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 150424 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:04:24,563<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=SPACE SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'SPACE' unknown
+TIME        Wed May 24 15:04:24 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'SPACE' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 151054 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:10:54,759<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236:3299 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '131.159.8.236:3299' unknown
+TIME        Wed May 24 15:10:54 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: '131.159.8.236:3299' not found
+SYSTEM CALL getaddrinfo
+COUNTER     3
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 151120 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:11:20,173<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3300' not reached
+TIME        Wed May 24 15:11:20 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 151239 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:12:39,273<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3300' not reached
+TIME        Wed May 24 15:12:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 151348 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:13:48,111<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=99 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3399' not reached
+TIME        Wed May 24 15:13:48 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3399
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 151449 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:14:49,818<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=01 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3301' not reached
+TIME        Wed May 24 15:14:49 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3301
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 151528 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:15:28,360<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3300' not reached
+TIME        Wed May 24 15:15:28 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       10053
+ERRNO TEXT  WSAECONNABORTED: Software caused connection abort
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 152010 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:20:10,632<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=00 SAPROUTER=/H/saprouter.hcc.in.tum.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'uccsaprouter'
+ERROR       partner 'hccsaprouter.informatik.tu-muenchen.de:sapgw00' not
+            reached
+TIME        Wed May 24 15:20:07 201
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -92
+MODULE      nixxi.cpp
+LINE        2896
+DETAIL      NiPConnect: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       79
+ERRNO TEXT  Connection refused
+COUNTER     352489
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 152107 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:21:07,305<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3300' not reached
+TIME        Wed May 24 15:21:07 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 152509 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:25:09,913<    
+RfcException: [null]
+    message: 'ashost' is missing
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:194)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at connector.Connector.step1Connect(Connector.java:61)
+	at connector.Connector.main(Connector.java:277)
+
+
+**** Error file opened at 20170524 152518 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:25:18,982<    
+RfcException: [null]
+    message: 'ashost' is missing
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:194)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at connector.Connector.step1Connect(Connector.java:61)
+	at connector.Connector.main(Connector.java:277)
+
+
+**** Error file opened at 20170524 152529 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:25:29,046<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=00 SAPROUTER=/H/saprouter.hcc.in.tum.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'uccsaprouter'
+ERROR       partner 'hccsaprouter.informatik.tu-muenchen.de:sapgw00' not
+            reached
+TIME        Wed May 24 15:25:25 201
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -92
+MODULE      nixxi.cpp
+LINE        2896
+DETAIL      NiPConnect: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       79
+ERRNO TEXT  Connection refused
+COUNTER     352600
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 152805 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:28:05,291<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=00 SAPROUTER=/H/saprouter.hcc.in.tum.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'uccsaprouter'
+ERROR       partner 'hccsaprouter.informatik.tu-muenchen.de:sapgw00' not
+            reached
+TIME        Wed May 24 15:28:01 201
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -92
+MODULE      nixxi.cpp
+LINE        2896
+DETAIL      NiPConnect: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       79
+ERRNO TEXT  Connection refused
+COUNTER     352638
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 152829 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:28:29,175<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.8.236 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3300' not reached
+TIME        Wed May 24 15:28:29 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 155248 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 15:52:48,939<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=I19Z GROUP=SPACE R3NAME=I19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       service '?' unknown
+TIME        Wed May 24 15:52:48 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -3
+DETAIL      NiErrSet
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 160635 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:06:35,261<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=I19Z GROUP=SPACE R3NAME=I19 MSSERV=3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       hostname 'I19Z' unknown
+TIME        Wed May 24 16:06:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'I19Z' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 160717 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:07:17,695<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=131.159.8.236 GROUP=SPACE R3NAME=I19 MSSERV=3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'uccsaprouter'
+ERROR       internal error
+TIME        Wed May 24 16:07:14 201
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -93
+MODULE      nirout.cpp
+LINE        2754
+DETAIL      NiRClientHandle: route expected
+COUNTER     354068
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 160805 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:08:05,247<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=131.159.8.236 GROUP=SPACE R3NAME=I19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       service '?' unknown
+TIME        Wed May 24 16:08:05 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -3
+DETAIL      NiErrSet
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 160824 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:08:24,874<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=131.159.8.236 GROUP=SPACE R3NAME=I19 MSSERV=3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'uccsaprouter'
+ERROR       internal error
+TIME        Wed May 24 16:08:21 201
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -93
+MODULE      nirout.cpp
+LINE        2754
+DETAIL      NiRClientHandle: route expected
+COUNTER     354149
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 161105 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:11:05,462<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=I19Z GROUP=SPACE R3NAME=I19 MSSERV=3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       hostname 'I19Z' unknown
+TIME        Wed May 24 16:11:05 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'I19Z' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 161132 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:11:32,494<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=131.159.8.236 GROUP=SPACE R3NAME=I19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       service '?' unknown
+TIME        Wed May 24 16:11:32 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -3
+DETAIL      NiErrSet
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 161206 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:12:06,850<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=131.159.8.236 GROUP=SPACE R3NAME=I19 MSSERV=3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'uccsaprouter'
+ERROR       internal error
+TIME        Wed May 24 16:12:03 201
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -93
+MODULE      nirout.cpp
+LINE        2754
+DETAIL      NiRClientHandle: route expected
+COUNTER     354449
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 161330 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:13:30,326<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=131.159.8.236 GROUP=SPACE R3NAME=I19 MSSERV=3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'uccsaprouter'
+ERROR       internal error
+TIME        Wed May 24 16:13:26 201
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -93
+MODULE      nirout.cpp
+LINE        2754
+DETAIL      NiRClientHandle: route expected
+COUNTER     354544
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 161521 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:15:21,752<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=150eb18a-4e89-4c2d-b668-014233d759ad GROUP=SPACE R3NAME=I19 MSSERV=3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       hostname '150eb18a-4e89-4c2d-b668-014233d759ad' unknown
+TIME        Wed May 24 16:15:21 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: '150eb18a-4e89-4c2d-b668-014233d759ad' not
+            found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 162218 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:22:18,144<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=I19Z GROUP=SPACE R3NAME=I19 MSSERV=3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       hostname 'I19Z' unknown
+TIME        Wed May 24 16:22:18 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'I19Z' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 162648 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:26:48,025<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=131.159.9.153 GROUP=SPACE R3NAME=I19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       service '?' unknown
+TIME        Wed May 24 16:26:48 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -3
+DETAIL      NiErrSet
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 162715 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:27:15,698<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=131.159.9.153 GROUP=SPACE R3NAME=I19 MSSERV=3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       timeout while pending for route completion
+TIME        Wed May 24 16:27:15 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -12
+DETAIL      NiErrSet
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 162909 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:29:09,337<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.9.153:3300' not reached
+TIME        Wed May 24 16:29:09 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.9.153:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 163422 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:34:22,655<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=appserver SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'appserver' unknown
+TIME        Wed May 24 16:34:22 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'appserver' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 163535 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:35:35,775<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=131.159.8.236 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3300' not reached
+TIME        Wed May 24 16:35:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 163617 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:36:17,834<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=131.159.8.236 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3300' not reached
+TIME        Wed May 24 16:36:17 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 163714 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:37:14,140<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=131.159.8.236:3299 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '131.159.8.236:3299' unknown
+TIME        Wed May 24 16:37:14 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: '131.159.8.236:3299' not found
+SYSTEM CALL getaddrinfo
+COUNTER     3
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 163956 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:39:56,280<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=131.159.8.236 SYSNR=99 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3399' not reached
+TIME        Wed May 24 16:39:56 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3399
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 164034 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:40:34,120<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=I19 SYSNR=99 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'I19' unknown
+TIME        Wed May 24 16:40:34 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'I19' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 164045 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:40:45,342<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=I19Z SYSNR=99 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'I19Z' unknown
+TIME        Wed May 24 16:40:45 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'I19Z' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 164558 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:45:58,132<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=131.159.8.236 SYSNR=01 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3301' not reached
+TIME        Wed May 24 16:45:58 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3301
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 164618 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 16:46:18,535<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=131.159.8.236 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.8.236:3300' not reached
+TIME        Wed May 24 16:46:18 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.8.236:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 170407 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 17:04:07,779<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=131.159.9.153 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.9.153:3300' not reached
+TIME        Wed May 24 17:04:07 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.9.153:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 170505 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 17:05:05,640<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=131.159.9.153 SYSNR=01 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.9.153:3301' not reached
+TIME        Wed May 24 17:05:05 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.9.153:3301
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 172100 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 17:21:00,016<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Wed May 24 17:21:00 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 173225 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 17:32:25,198<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=I19Z GROUP=PUBLIC R3NAME=I19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       service '?' unknown
+TIME        Wed May 24 17:32:25 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -3
+DETAIL      NiErrSet
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 173733 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 17:37:33,527<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=/H/saprouter.hcc.in.tum.de/S/3299/I19Z GROUP=SPACE R3NAME=I19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       service '?' unknown
+TIME        Wed May 24 17:37:33 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -3
+DETAIL      NiErrSet
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20170524 173910 Central European Summer Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Wed May 24 17:39:10,556<    
+RfcException: [null]
+    message: Connect to message server host failed
+Connection parameters: TYPE=B DEST=ABAP_MS_WITHOUT_POOL MSHOST=131.159.9.153 GROUP=SPACE R3NAME=I19 SAPROUTER=/H/saprouter.hcc.in.tum.de/S/3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-6ASN4HH with Unicode
+ERROR       timeout while pending for route completion
+TIME        Wed May 24 17:39:10 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -12
+DETAIL      NiErrSet
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
