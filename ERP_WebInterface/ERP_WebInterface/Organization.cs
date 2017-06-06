@@ -43,7 +43,7 @@ namespace ERP_WebInterface
 
         public override String ToString()
         {
-            return $"{organization}\n{division}\n{group}\n{office}";
+            return $"\nBMMR\n{organization}";
         }
     }
 }

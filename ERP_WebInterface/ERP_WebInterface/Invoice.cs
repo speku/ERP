@@ -135,6 +135,27 @@ namespace ERP_WebInterface
                     "Währung:\t\t" + currency + Environment.NewLine;
         }
 
+        char space = '\u00a0';
+
+        public string PDFString()
+        {
+            return
+                    "\nRechnungsnummer: " + space + invoiceNumber + Environment.NewLine +
+                    "Kundennummer: " + space + customerNumber + Environment.NewLine +
+                    "Kunde: " + space + Environment.NewLine +
+                    "Artikelnummer: " + itemNumber + Environment.NewLine +
+                    "Artikelbeschreibung: " + itemName + Environment.NewLine +
+                    "Angeforderte Menge: " + requiredQuantity + Environment.NewLine +
+                    "Gelieferte Menge: " + deliveredQuantity + Environment.NewLine +
+                    "Rechnungsdatum: " + invoiceDate + Environment.NewLine +
+                    "Faelligkeitsdatum: "+ requiredDate + Environment.NewLine +
+                    "Stueckpreis Netto: " + netPrice + Environment.NewLine +
+                    "Stueckpreis Brutto: " + taxPrice + Environment.NewLine +
+                    "Gesamtbetrag Netto: " + netTotal + Environment.NewLine +
+                    "Gesamtbetrag Brutto: " + taxTotal + Environment.NewLine +
+                    "Währung: " + currency + Environment.NewLine;
+        }
+
         string lb = "<br>";
 
         public string HTMLString()

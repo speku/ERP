@@ -22,7 +22,16 @@ namespace ERP_WebInterface
             foreach (var invoice in _Default.customer.Invoices)
             {
                 var b = new Button();
-                b.Text = "PDF drucken";
+                b.Click += (s, args) =>
+                {
+                    var path = Util.CreatePDF(invoice);
+                    Response.ContentType = "application/octet-stream";
+                    Response.AppendHeader("Content-Disposition", $"attachment; filename={path}");
+                    Response.TransmitFile(Server.MapPath($"~/{path}"));
+                    Response.End();
+
+                };
+                b.Text = "als PDF herunterladen";
                 var p = new Panel();
                 var div = new HtmlGenericControl("div");
                 div.Attributes.Add("id", invoice.invoiceNumber);

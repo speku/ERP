@@ -118,7 +118,7 @@ namespace ERP_WebInterface
 
         public override String ToString()
         {
-            return $"{firstName}\n{lastName}\n{street}\n{city}";
+            return $"\n{firstName}\n{street}\n{city}";
         }
 
     }
