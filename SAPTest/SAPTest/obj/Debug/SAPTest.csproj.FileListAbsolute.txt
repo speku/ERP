@@ -1,0 +1,8 @@
+c:\users\speku\documents\visual studio 2017\Projects\SAPTest\SAPTest\bin\Debug\SAPTest.exe.config
+c:\users\speku\documents\visual studio 2017\Projects\SAPTest\SAPTest\bin\Debug\SAPTest.exe
+c:\users\speku\documents\visual studio 2017\Projects\SAPTest\SAPTest\bin\Debug\SAPTest.pdb
+c:\users\speku\documents\visual studio 2017\Projects\SAPTest\SAPTest\bin\Debug\sapnco.dll
+c:\users\speku\documents\visual studio 2017\Projects\SAPTest\SAPTest\bin\Debug\sapnco_utils.dll
+c:\users\speku\documents\visual studio 2017\Projects\SAPTest\SAPTest\obj\Debug\SAPTest.csprojResolveAssemblyReference.cache
+c:\users\speku\documents\visual studio 2017\Projects\SAPTest\SAPTest\obj\Debug\SAPTest.exe
+c:\users\speku\documents\visual studio 2017\Projects\SAPTest\SAPTest\obj\Debug\SAPTest.pdb
