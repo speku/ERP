@@ -10,17 +10,17 @@
             <asp:Label ID="customerNumberLabel" runat="server"></asp:Label>
         </p>
         <p class="lead">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="customerNameLabel" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="customerNameLabel" runat="server"></asp:Label>
         </p>
         <p class="lead">Straße:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="customerStreetLabel" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="customerStreetLabel" runat="server"></asp:Label>
         </p>
         <p class="lead">Ort:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="customerCityLabel" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="customerCityLabel" runat="server"></asp:Label>
         </p>
         <p class="lead">&nbsp;</p>
         <p class="lead">Ihre Rechnungen: <p class="lead">
-            <asp:ListBox ID="ListBox1" runat="server" Height="170px" Width="997px"></asp:ListBox>
+            <asp:ListBox ID="invoicesListBox" runat="server" Height="170px" Width="997px"></asp:ListBox>
         </p>
     </div>
 

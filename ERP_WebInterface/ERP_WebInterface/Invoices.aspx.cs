@@ -7,28 +7,23 @@ using System.Web.UI.WebControls;
 
 namespace ERP_WebInterface
 {
-    public partial class _Default : Page
+    public partial class _Invoices : Page
     {
-        public static Connector connector = new Connector();
-        public static Customer customer;
+        override protected void OnInit(EventArgs e)
+        {
+            Load += Page_Load;
+        }
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            customerNumberLabel.Text = _Default.customer.number;
+            customerNameLabel.Text = _Default.customer.firstName;
+            customerStreetLabel.Text = _Default.customer.street;
+            customerCityLabel.Text = _Default.customer.city;
 
+            invoicesListBox.Items.AddRange(_Default.customer.Invoices.Select(i => new ListItem(i.invoiceNumber, i.ToString())).ToArray());
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            customer = connector.Customer(customerTextBox.Text);
-            if (customer.firstName == null || customer.firstName == "")
-            {
-                errorLabel.Text = $"Ein Kunde mit der Kundennummer {customerTextBox.Text} konnte nicht gefunden werden.\nBitte überprüfen Sie Ihre Eingabe.";
-                customerTextBox.Text = "";
-                passwordTextBox.Text = "";
-            } else
-            {
-                errorLabel.Text = $"{customer.firstName} wurde erfolgreich angemeldet!";
-            }
-        }
+      
     }
 }

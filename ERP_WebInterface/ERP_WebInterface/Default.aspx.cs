@@ -12,9 +12,11 @@ namespace ERP_WebInterface
         public static Connector connector = new Connector();
         public static Customer customer;
 
+        
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -25,9 +27,12 @@ namespace ERP_WebInterface
                 errorLabel.Text = $"Ein Kunde mit der Kundennummer {customerTextBox.Text} konnte nicht gefunden werden.\nBitte überprüfen Sie Ihre Eingabe.";
                 customerTextBox.Text = "";
                 passwordTextBox.Text = "";
+                errorLabel.ForeColor = System.Drawing.Color.Red;
             } else
             {
                 errorLabel.Text = $"{customer.firstName} wurde erfolgreich angemeldet!";
+                errorLabel.ForeColor = System.Drawing.Color.Green;
+                Response.Redirect("~/Invoices.aspx");
             }
         }
     }

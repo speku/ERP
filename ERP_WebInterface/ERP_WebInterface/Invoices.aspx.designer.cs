@@ -10,7 +10,7 @@
 namespace ERP_WebInterface {
     
     
-    public partial class _Default {
+    public partial class _Invoices {
         
         /// <summary>
         /// customerNumberLabel control.
@@ -49,12 +49,12 @@ namespace ERP_WebInterface {
         protected global::System.Web.UI.WebControls.Label customerCityLabel;
         
         /// <summary>
-        /// ListBox1 control.
+        /// invoicesListBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        protected global::System.Web.UI.WebControls.ListBox invoicesListBox;
     }
 }
