@@ -3,8 +3,10 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>BMMR Rechnungen</h1>
+        <h1>BMMR Kundenportal</h1>
+        <p>&nbsp;</p>
         <p class="lead">Melden Sie sich mit Ihrer Kundennummer und Passwort an um Ihre Rechnungen einzusehen.</p>
+        <p class="lead">&nbsp;</p>
         <p class="lead">Kundennummer:&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="customerTextBox" runat="server"></asp:TextBox>
         </p>

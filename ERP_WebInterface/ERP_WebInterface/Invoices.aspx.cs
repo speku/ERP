@@ -4,24 +4,39 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
 
 namespace ERP_WebInterface
 {
     public partial class _Invoices : Page
     {
-        override protected void OnInit(EventArgs e)
-        {
-            Load += Page_Load;
-        }
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            customerNumberLabel.Text = _Default.customer.number;
+            customerNumberLabel.Text = _Default.customer.number.TrimStart(new char[] { '0' });
             customerNameLabel.Text = _Default.customer.firstName;
             customerStreetLabel.Text = _Default.customer.street;
             customerCityLabel.Text = _Default.customer.city;
 
-            invoicesListBox.Items.AddRange(_Default.customer.Invoices.Select(i => new ListItem(i.invoiceNumber, i.ToString())).ToArray());
+            foreach (var invoice in _Default.customer.Invoices)
+            {
+                var b = new Button();
+                b.Text = "PDF drucken";
+                var p = new Panel();
+                var div = new HtmlGenericControl("div");
+                div.Attributes.Add("id", invoice.invoiceNumber);
+                div.InnerHtml = invoice.HTMLString()+ "<br>";
+                p.Controls.Add(div);
+                p.Controls.Add(b);
+                p.BorderStyle = BorderStyle.Solid;
+                invoicesPanel.Controls.Add(p);
+
+                var div2 = new HtmlGenericControl("div");
+                div2.Attributes.Add("id", invoice.invoiceNumber + "2");
+                div2.InnerHtml = "<br><br>";
+                invoicesPanel.Controls.Add(div2);
+            }
         }
 
       

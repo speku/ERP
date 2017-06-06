@@ -1,9 +1,9 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Invoices.aspx.cs" Inherits="ERP_WebInterface._Default" %>
+﻿<%@ Page Title="Rechnungen" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Invoices.aspx.cs" Inherits="ERP_WebInterface._Invoices" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>BMMR Rechnungen</h1>
+        <h1>BMMR Kundenportal</h1>
         <p class="lead">Wilkommen!</p>
         <p class="lead">&nbsp;</p>
         <p class="lead">Kundennummer:&nbsp;&nbsp;&nbsp;
@@ -19,9 +19,9 @@
             <asp:Label ID="customerCityLabel" runat="server"></asp:Label>
         </p>
         <p class="lead">&nbsp;</p>
-        <p class="lead">Ihre Rechnungen: <p class="lead">
-            <asp:ListBox ID="invoicesListBox" runat="server" Height="170px" Width="997px"></asp:ListBox>
-        </p>
+        <h2>Ihre Rechnungen</h2>
+        <asp:Panel ID="invoicesPanel" runat="server">
+        </asp:Panel>
     </div>
 
     </asp:Content>

@@ -73,3 +73,4 @@ C:\Users\speku\Documents\ERP\ERP_WebInterface\ERP_WebInterface\bin\ERP_WebInterf
 C:\Users\speku\Documents\ERP\ERP_WebInterface\ERP_WebInterface\bin\ERP_WebInterface.pdb
 C:\Users\speku\Documents\ERP\ERP_WebInterface\ERP_WebInterface\obj\Debug\ERP_WebInterface.dll
 C:\Users\speku\Documents\ERP\ERP_WebInterface\ERP_WebInterface\obj\Debug\ERP_WebInterface.pdb
+C:\Users\speku\Documents\ERP\ERP_WebInterface\ERP_WebInterface\obj\Debug\ERP_WebInterface.csprojResolveAssemblyReference.cache

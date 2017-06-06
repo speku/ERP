@@ -34,7 +34,7 @@ namespace ERP_WebInterface
         {
             this.details = details;
             this.customer = customer;
-            this.customerNumber = customer.number;
+            this.customerNumber = customer.number.TrimStart(new char[] { '0' });
 
             if (details == null)
             {
@@ -51,10 +51,10 @@ namespace ERP_WebInterface
                 switch (kv.Key)
                 {
                     case "SD_DOC":
-                        invoiceNumber = v;
+                        invoiceNumber = v.TrimStart(new char[] { '0' });
                         break;
                     case "ITM_NUMBER":
-                        itemNumber = v;
+                        itemNumber = v.TrimStart(new char[] { '0' });
                         break;
                     case "SHORT_TEXT":
                         itemName = v;
@@ -110,28 +110,50 @@ namespace ERP_WebInterface
                 taxTotal = netTotal * 1.19 + "";
                 this.netTotal = netTotal + "";
             } catch { }
-          
+
 
             //var netAmount = float.Parse(string.Join("", netPrice.Where(c => Char.IsDigit(c) || Char.IsPunctuation(c)).ToArray()));
         }
 
-        public override String ToString()
+
+        public override string ToString()
         {
             return
-                    "Rechnungsnummer:\t" + invoiceNumber + "\n" +
-                    "Kundennummer:\t\t" + customerNumber + "\n" +
-                    "Kunde:\t\t\t" + customerName + "\n" +
-                    "Artikelnummer:\t\t" + itemNumber + "\n" +
-                    "Artikelbeschreibung:\t" + itemName + "\n" +
-                    "Angeforderte Menge:\t" + requiredQuantity + "\n" +
-                    "Gelieferte Menge:\t" + deliveredQuantity + "\n" +
-                    "Rechnungsdatum:\t\t" + invoiceDate + "\n" +
-                    "Faelligkeitsdatum:\t" + requiredDate + "\n" +
-                    "Stueckpreis Netto:\t" + netPrice + "\n" +
-                    "Stueckpreis Brutto:\t" + taxPrice + "\n" +
-                    "Gesamtbetrag Netto:\t" + netTotal + "\n" +
-                    "Gesamtbetrag Brutto: \t" + taxTotal + "\n" +
-                    "Waehrung:\t\t" + currency + "\n";
+                    "Rechnungsnummer:\t" + invoiceNumber + Environment.NewLine +
+                    "Kundennummer:\t\t" + customerNumber + Environment.NewLine +
+                    "Kunde:\t\t\t" + customerName + Environment.NewLine +
+                    "Artikelnummer:\t\t" + itemNumber + Environment.NewLine +
+                    "Artikelbeschreibung:\t" + itemName + Environment.NewLine +
+                    "Angeforderte Menge:\t" + requiredQuantity + Environment.NewLine +
+                    "Gelieferte Menge:\t" + deliveredQuantity + Environment.NewLine +
+                    "Rechnungsdatum:\t\t" + invoiceDate + Environment.NewLine +
+                    "Faelligkeitsdatum:\t" + requiredDate + Environment.NewLine +
+                    "Stueckpreis Netto:\t" + netPrice + Environment.NewLine +
+                    "Stueckpreis Brutto:\t" + taxPrice + Environment.NewLine +
+                    "Gesamtbetrag Netto:\t" + netTotal + Environment.NewLine +
+                    "Gesamtbetrag Brutto: \t" + taxTotal + Environment.NewLine +
+                    "Währung:\t\t" + currency + Environment.NewLine;
+        }
+
+        string lb = "<br>";
+
+        public string HTMLString()
+        {
+            return
+                    "Rechnungsnummer:\t" + invoiceNumber + lb +
+                    "Kundennummer:\t\t" + customerNumber + lb +
+                    "Kunde:\t\t\t" + customerName + lb +
+                    "Artikelnummer:\t\t" + itemNumber + lb +
+                    "Artikelbeschreibung:\t" + itemName + lb +
+                    "Angeforderte Menge:\t" + requiredQuantity + lb +
+                    "Gelieferte Menge:\t" + deliveredQuantity + lb +
+                    "Rechnungsdatum:\t\t" + invoiceDate + lb +
+                    "Faelligkeitsdatum:\t" + requiredDate + lb +
+                    "Stueckpreis Netto:\t" + netPrice + lb +
+                    "Stueckpreis Brutto:\t" + taxPrice + lb +
+                    "Gesamtbetrag Netto:\t" + netTotal + lb +
+                    "Gesamtbetrag Brutto: \t" + taxTotal + lb +
+                    "Währung:\t\t" + currency + lb;
         }
     }
 }
